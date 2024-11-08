@@ -66,7 +66,7 @@ export default function Page() {
                   <FormControl>
                     <Input
                       {...field}
-                      placeholder="Tyler Durden"
+                      placeholder="John Doe"
                       disabled={isPending}
                       type="name"
                       className="bg-background/50 dark:bg-background/30 ring-foreground/5"
@@ -85,7 +85,7 @@ export default function Page() {
                   <FormControl>
                     <Input
                       {...field}
-                      placeholder="tylerdurden@gmail.com"
+                      placeholder="johndoe@gmail.com"
                       disabled={isPending}
                       type="email"
                       className="bg-background/50 dark:bg-background/30 ring-foreground/5"

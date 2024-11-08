@@ -29,10 +29,10 @@ import {
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { toast } from 'react-hot-toast'
+import EmailForm from '@/components/email-form'
 
 export default function () {
   const [progress, setProgress] = useState(0)
-  const [email, setEmail] = useState('')
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -45,29 +45,29 @@ export default function () {
     return () => clearInterval(interval)
   }, [])
 
-  const handleSubmit = async (e: any) => {
-    e.preventDefault()
-    const email = e.target.email.value
-    try {
-      const response = await fetch('/api/emails', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ email })
-      })
-      const data = await response.json()
+  // const handleSubmit = async (e: any) => {
+  //   e.preventDefault()
+  //   const email = e.target.email.value
+  //   try {
+  //     const response = await fetch('/api/emails', {
+  //       method: 'POST',
+  //       headers: {
+  //         'Content-Type': 'application/json'
+  //       },
+  //       body: JSON.stringify({ email })
+  //     })
+  //     const data = await response.json()
 
-      if (data.message) {
-        toast.success(data.message)
-        setEmail('')
-      } else {
-        console.error(data, 'ha')
-      }
-    } catch (error) {
-      console.error('Error:', error)
-    }
-  }
+  //     if (data.message) {
+  //       toast.success(data.message)
+  //       setEmail('')
+  //     } else {
+  //       console.error(data, 'ha')
+  //     }
+  //   } catch (error) {
+  //     console.error('Error:', error)
+  //   }
+  // }
 
   return (
     <main className="w-full max-w-6xl flex flex-col gap-16 p-6">
@@ -104,7 +104,8 @@ export default function () {
             />
             <Switch defaultChecked />
             <Progress value={progress} />
-            <Card className="w-full bg-transparent relative">
+            <EmailForm/>
+            {/* <Card className="w-full bg-transparent relative">
               <CardHeader>
                 <CardTitle>Get the Starter Kit</CardTitle>
                 <CardDescription>
@@ -139,7 +140,7 @@ export default function () {
                   <Button type="submit">Continue</Button>
                 </CardFooter>
               </form>
-            </Card>
+            </Card> */}
           </div>
         </div>
       </div>

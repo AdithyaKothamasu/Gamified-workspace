@@ -10,9 +10,9 @@ export async function POST(request: Request) {
         const { email } = await request.json();
 
         const { data, error } = await resend.emails.send({
-            from: "Nizzy <noreply@nizzystarter.com>",
+            from: "Adithya <noreply@trixoft.com>",
             to: [email],
-            subject: "Nizzy Starter Kit",
+            subject: "Thanks for subscribing",
             html: render(RepoEmail()),
         });
 

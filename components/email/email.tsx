@@ -23,35 +23,32 @@ import {
     <Html>
       <Head />
       <Preview>
-        Your Free SaaS Starter Kit
+        This is gonna be exciting!!
       </Preview>
       <Body style={main}>
         <Container style={container}>
           
           <Text style={paragraph}>Hey!!</Text>
           <Text style={paragraph}>
-            Welcome to the Nizzy Starter Kit!! The free (and better) SaaS Starter Kit.
+            Thank you for subscribing to my newsletter and showing interest in the project.
           </Text>
           <Text style={paragraph}>
-            Below is the link to the github repository where you can find the starter kit.
+            Below is the link to the github repository where you can find the code.
           </Text>
           <Text style={paragraph}>
-            Enjoy building your next project with it!
+            Lets learn and grow together. 🚀
           </Text>
           <Section style={btnContainer}>
-            <Button style={button} href="https://github.com/NizarAbiZaher/nizzy-starter">
-              Go To The Starter Kit
+            <Button style={button} href="https://github.com/AdithyaKothamasu/Gamified-workspace.git">
+              Go To The code.
             </Button>
           </Section>
           <Text style={paragraph}>
             Best,
             <br />
-            Nizzy
+            Adithya
           </Text>
           <Hr style={hr} />
-          <Text style={footer}>
-            470 Noor Ave STE B #1148, Ottawa, Canada 94080
-          </Text>
         </Container>
       </Body>
     </Html>

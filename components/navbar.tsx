@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import { ModeToggle } from '@/components/mode-toggle'
-import Image from 'next/image'
 import { UserButton } from '@/components/user-button'
 import { MobileSidebar } from '@/components/mobile-sidebar'
 import { Logo } from '@/components/logo'

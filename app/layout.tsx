@@ -6,13 +6,13 @@ import { Navbar } from '@/components/navbar'
 import { ToastProvider } from '@/components/providers/toaster-provider'
 import { SessionProvider } from 'next-auth/react'
 import { auth } from '@/auth'
-import { AlertDemo } from '@/components/alert'
+// import { AlertDemo } from '@/components/alert'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Nizzy-Starter',
-  description: 'The best SaaS starter kit on the web 🌎 🚀 HAHA'
+  title: 'Trixoft: Gamified Workspace',
+  description: 'Collaborate in real-time with your team in an interactive 2D space. Voice, video, and proximity chat make remote work feel natural.'
 }
 
 export default async function RootLayout({
@@ -32,7 +32,7 @@ export default async function RootLayout({
             disableTransitionOnChange
           >
             <ToastProvider />
-            <AlertDemo />
+            {/* <AlertDemo /> */}
             <Navbar />
             {children}
           </ThemeProvider>
