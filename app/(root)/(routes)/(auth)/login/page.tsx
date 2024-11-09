@@ -77,7 +77,7 @@ export default function Page() {
                   <FormControl>
                     <Input
                       {...field}
-                      placeholder="tylerdurden@gmail.com"
+                      placeholder="johndoe@gmail.com"
                       disabled={isPending}
                       type="email"
                       className="bg-background/50 dark:bg-background/30 ring-foreground/5"

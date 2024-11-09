@@ -5,10 +5,10 @@ import { MobileSidebar } from '@/components/mobile-sidebar'
 import { Logo } from '@/components/logo'
 
 export const navPages = [
-  {
-    title: 'Dashboard',
-    link: '/dashboard'
-  },
+  // {
+  //   title: 'Dashboard',
+  //   link: '/dashboard'
+  // },
   // {
   //   title: 'Pricing',
   //   link: '/#pricing'
@@ -28,7 +28,7 @@ export const Navbar = () => {
           </Link>
           {/* Links, Theme, & User */}
           <div className="hidden sm:flex h-[40px] items-center text-lg md:text-lg font-medium gap-4 transition-all">
-            <div className="flex items-center h-full text-base font-medium">
+            {/* <div className="flex items-center h-full text-base font-medium">
               {navPages.map((page, index) => (
                 <Link
                   key={index}
@@ -38,7 +38,7 @@ export const Navbar = () => {
                   {page.title}
                 </Link>
               ))}
-            </div>
+            </div> */}
             <div className="flex h-full gap-4">
               <ModeToggle />
               <UserButton />

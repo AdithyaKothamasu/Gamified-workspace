@@ -56,15 +56,15 @@ const EmailForm: React.FC = () => {
                     </div>
                   </div>
                 </CardContent>
-                <CardFooter className="flex justify-between">
-                  <Button
+                <CardFooter className="flex justify-center sm:justify-between">
+                  {/* <Button
                     type="button"
                     variant="outline"
                     onClick={() => setEmail('')}
                   >
                     Cancel
-                  </Button>
-                  <Button type="submit">Continue</Button>
+                  </Button> */}
+                  <Button type="submit">Submit</Button>
                 </CardFooter>
               </form>
             </Card>

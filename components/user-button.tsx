@@ -56,7 +56,7 @@ export const UserButton = () => {
   }
   const Logout = () => {
     signOut()
-    router.push('/login')
+    router.push('/')
   }
 
   return (
