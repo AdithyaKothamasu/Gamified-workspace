@@ -9,14 +9,11 @@ export const navPages = [
     title: 'Dashboard',
     link: '/dashboard'
   },
-  {
-    title: 'Pricing',
-    link: '/#pricing'
-  },
-  {
-    title: 'Items',
-    link: '/#items'
-  }
+  // {
+  //   title: 'Pricing',
+  //   link: '/#pricing'
+  // },
+  
 ]
 
 export const Navbar = () => {
